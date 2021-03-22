@@ -1,0 +1,131 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+    padding: 0 15px;
+  background-image: url('./images/bg-pattern.png');
+}
+
+.is-hidden {
+  display: none;
+}
+
+.search-form {
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-input {
+  padding-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  width: 400px;
+  height: 40px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(114, 114, 114);
+}
+
+.btn {
+  display: flex;
+  min-width: 100px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  color: rgb(214, 211, 211);
+  font-weight: 700;
+  background-color: #000;
+}
+
+.btn:hover {
+  background-color: rgb(214, 211, 211);  
+  color: #000;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery {
+  padding-top: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 400px;
+  height: 270px;
+  display: block;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+
+.list-item{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  background-color: rgb(236, 234, 234);
+}
+
+.list-item:not(:nth-last-child(-n+3)) {
+    margin-bottom: 30px;
+  
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5px;
+  padding-bottom: 5px;
+}
+
+.load-more-btn  {
+  display: flex;
+  min-width: 100px;
+  padding: 15px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  color: rgb(214, 211, 211);
+  font-weight: 700;
+  background-color: #000;
+}
+
+.load-more-btn:hover {
+  background-color: rgb(214, 211, 211);  
+  color: #000;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.more-btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}

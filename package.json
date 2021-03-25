@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --env.mode development --config ./webpack/config.js",
     "build": "webpack --env.mode production --config ./webpack/config.js",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -r https://github.com/tanya-pavlova/goit-js-hw-12-countries.git"
+    "deploy": "gh-pages -d build -r https://github.com/tanya-pavlova/goit-js-hw-13-image-finder.git"
   },
   "repository": {
     "type": "git",

@@ -30,16 +30,18 @@ function onSubmit(event) {
     
     refs.loadMore.classList.remove('is-hidden');
     refs.loadMore.classList.add('load-more-btn');
-    });
+    })
+    .catch(err => console.log(err));
 }
  
 function onLoadMoreBtn() {
+    const scrollHeight = document.documentElement.scrollHeight;
     apiService.fetchHits().then(hits => {
         updateMarkup(hits);  
         apiService.incrementPage();
 
     window.scrollTo({
-        top: document.documentElement.scrollHeight,            
+        top: scrollHeight,            
         behavior: 'smooth'
     });
      
